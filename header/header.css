@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+body #nav-header {
+  background-color: #ff5d85;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body #nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 10px;
+}
+body #nav-menu li {
+  padding: 10px;
+  border-radius: 3px 10px 3px 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+body #nav-menu li a {
+  text-decoration: none;
+  color: #000000;
+}
+body #nav-menu li a:hover {
+  color: #ff2058;
+}
+body #nav-profile {
+  margin: 0px 40px;
+  display: flex;
+  align-items: center;
+}
+body #nav-profile #nav-perfil {
+  margin: 10px 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+body #nav-menu, body #nav-profile {
+  list-style: none;
+}
+body .nav-menu-item:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ff2058;
+  transition: 0.3s;
+}
+body span:hover, body #nav-perfil:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  height: 70px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+footer #footer-perfil-name:hover {
+  color: #ff4500;
+}
+footer img {
+  width: 40px;
+}/*# sourceMappingURL=footer.css.map */

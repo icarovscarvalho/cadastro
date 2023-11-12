@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/barry.png" type="image/x-icon">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/main/main.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Barry - Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <ul id="nav-menu">
+                <!-- Logo -->
+                <li><img id="nav-logo" src="media/barry.png" alt="logo"></li>
+                <!-- HOME -->
+                <li class="nav-menu-item"><a href="#">Home</a></li>
+
+                <!-- REGISTER -->
+                <li class="nav-menu-item"><a href="#">Register</a></li>
+
+                <!-- ABOUT -->
+                <li class="nav-menu-item"><a href="#">About</a></li>
+
+                <!-- CONTACT -->
+                <li class="nav-menu-item"><a href="#">Contact</a></li>
+            </ul>
+            <ul id="nav-profile">
+                <!-- PERFIL -->
+                <li>
+                    <img id="nav-perfil" src="media/man_teen.jpg" alt="profile photo" onclick="clickMenu()">
+                </li>
+                <li>
+                    <span class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <div id="nav-hamburger-menu">
+            <!-- Photo Perfil -->
+            <div id="nav-hamburger-menu-exit">
+                <p id="exit-button" onclick="exitMenu()"><a href="#">X</a></p>
+            </div>
+            <div id="nav-hamburguer-menu-perfil">
+                <a href="#" rel="noopener noreferrer"><img src="media/man_teen.jpg" alt="Photo Profile">
+                </a>
+                <div id="nav-hamburguer-menu-perfil-dados">
+                    <p>Guilherme Assuna</p>
+                    <p style="font-size: .8em; text-transform: none;">QA Engineer</p>
+                </div>
+            </div>
+
+            <!-- Profile Menus -->
+            <ul>
+                <!-- Profile -->
+                <li><a href="#"  rel="noopener noreferrer"><span class="material-symbols-outlined">
+                    face
+                </span>profile</a></li>
+
+                <!-- settings -->
+                <li><a href="#" rel="noopener noreferrer"><span class="material-symbols-outlined">
+                    settings
+                </span>settings</a></li>
+
+                <!-- feed -->
+                <li><a href="#" rel="noopener noreferrer"><span class="material-symbols-outlined">
+                    feed
+                </span>feed</a></li>
+
+                <!-- Configurations -->
+                <li><a href="#" rel="noopener noreferrer"><span class="material-symbols-outlined">
+                    help
+                </span>help</a></li>
+
+                <!-- Logout -->
+                <li><a href="#" rel="noopener noreferrer"><span class="material-symbols-outlined">
+                    logout
+                </span>logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. FORMULÁRIO -->
+        <h1>Cadastro</h1>
+        <div id="main-form">
+
+            <!-- 1.1 PARTE DE MENU DO FORMULÁRIO -->
+            <div id="main-form-menu" class="flip-container">
+
+                <!-- 1.1.1 PARTE DE ICONES DO FORMULÁRIO -->
+                <div class="main-form-menu-icons" class="flipper">
+                    <span class="material-symbols-outlined">
+                    person
+                    </span>
+                    <p>Personal</p>
+                </div>
+
+                <div class="main-form-menu-icons">
+                    <span class="material-symbols-outlined">
+                    psychology
+                    </span>
+                    <p>Hard Skills</p>
+                </div>
+
+                <div class="main-form-menu-icons">
+                    <span class="material-symbols-outlined">
+                    workspace_premium
+                    </span>
+                    <p>Experience</p>
+                </div>
+
+                <div class="main-form-menu-icons">
+                    <span class="material-symbols-outlined">
+                    handshake
+                    </span>
+                    <p>Soft Skills</p>
+                </div>
+
+            </div>
+
+            <!-- 1.2 PARTE DE DADOS DO FORMULÁRIO -->
+            <div id="main-form-data">
+                <form action="post">
+                    <fieldset>
+                        <input type="text" placeholder="Nome Completo" maxlength="30" >
+                        <input type="number" name="" id="" placeholder="Idade">
+                        <label for="">
+                            <input type="radio" name="" id="">Masculino
+                            <input type="radio" name="" id="">Feminino
+                            <input type="radio" name="" id="">Prefiro não dizer
+                        </label>
+                    </fieldset>
+                    <fieldset>Dados</fieldset>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por <span id="footer-perfil-name"><strong>Ikky</strong></span> </p>
+        <span class="footer-icons">
+            <img src="media/linkedin.png" alt="linkedIn - social media icon"><img src="" alt="">
+        </span>
+        
+        <span class="footer-icons">
+            <img src="media/github.png" alt="Github - social media icon"><img src="" alt="">
+        </span>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/cadastroMenus.js"></script>
+</body>
+</html>

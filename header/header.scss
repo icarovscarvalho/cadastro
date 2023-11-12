@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+$cor-base: #ffffff;
+$cor-primary: #ff5d85;
+$cor-text: #000000;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $cor-base;
+    
+    #nav-header{
+        background-color: $cor-primary;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 0px 10px;
+
+        li{
+            padding: 10px;
+            border-radius: 3px 10px 3px 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: .9em;
+
+            a{
+                text-decoration: none;
+                color: $cor-text;
+            }
+
+            a:hover{
+                color: #ff2058;   
+            }
+        }
+    }
+
+    #nav-profile{
+        margin: 0px 40px;
+        display: flex;
+        align-items: center;
+
+    #nav-perfil{
+        margin: 10px 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    }
+
+    #nav-menu, #nav-profile{
+        list-style: none;
+    }
+
+    .nav-menu-item:hover{
+        cursor: pointer;
+        background-color: $cor-base;
+        color: #ff2058;
+        transition: .3s;
+    }
+
+    span:hover, #nav-perfil:hover{
+        cursor: pointer;
+        color: $cor-base;
+        transition: .3s;
+    } 
+}
