@@ -1,3 +1,5 @@
+Este é um projeto pessoal para estudo, onde o objetivo é montar uma página de cadastro com perfil ativo, formulário e banco de dados.
+
 # cadastro
  Plataforma de cadastro de informações
 
